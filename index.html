@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		canvas{
+			display: block;
+			margin: 0 auto;
+			background-color: white;
+		}
+		h1{
+			text-align: center;
+			font-weight: 200;
+			font-size: 70px;
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+		.descript{
+			text-align: center;
+		}
+		.schet{
+			display: flex;
+			justify-content: space-between;
+			width: 300px;
+			margin: 0 auto;
+		}
+		h2{
+			text-align: center;
+		}
+		.ktohodit{
+			width: 300px;
+			margin: 20px auto;
+			text-align: center;
+		}
+		.button1{
+			background-color: red;
+			text-decoration: none;
+			font-family: sans-serif;
+			color: white;
+			padding: 5px 20px 5px 20px;
+			border-radius: 5px;
+		}
+		.buttons{
+			width: 350px;
+			margin: 20px auto;
+
+		}
+		form{
+			display: flex;
+			justify-content: space-between;
+		}
+		#reset{
+			background-color: red;
+			text-decoration: none;
+			font-family: sans-serif;
+			color: white;
+			width: 150px;
+			border-radius: 5px;
+			border: none;
+		}
+		#newraund{
+			background-color: green;
+			text-decoration: none;
+			font-family: sans-serif;
+			color: white;
+			width: 150px;
+			border-radius: 5px;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Крестики-нолики</h1>
+	<p class="descript">Простая игра в крестики нолики. Первым ходит победитель</p>
+	<h2>Количество побед</h2>
+	<div class="schet">
+		<p>Первый игрок: <span id="player1">0</span></p>
+		<p>Второй игрок: <span id="player2">0</span></p>
+	</div>
+	<h2>Ход</h2>
+	<p class="ktohodit">Ходит <span id="plrnow"></span> игрок - <span id="znak"></span></p>
+	<div class="cnv"><canvas id="canvas"></canvas></div>
+	<div class="buttons">
+		<form>
+		<input type="button" id="newraund"  value="Новый раунд">
+		<input type="button" id="reset"  value="сброс">
+		</form>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
